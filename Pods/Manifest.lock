@@ -1,0 +1,49 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - ChameleonFramework (2.0.4):
+    - ChameleonFramework/Default (= 2.0.4)
+  - ChameleonFramework/Default (2.0.4)
+  - DZNEmptyDataSet (1.7.3)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (2.5.16)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.4)
+  - ChameleonFramework
+  - DZNEmptyDataSet
+  - MBProgressHUD (~> 0.9.1)
+  - MJExtension (~> 2.5.3)
+  - SDWebImage (~> 3.7.2)
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  ChameleonFramework: 5abe69b1f2a6cc79c3c435fcd9d3d855748225ee
+  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+
+COCOAPODS: 0.39.0

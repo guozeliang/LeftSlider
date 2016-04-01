@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LeftSortsViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController * mainVC = [storyBoard instantiateViewControllerWithIdentifier:@"ViewController"];
+    
+    self.mainNavigationController = [[UINavigationController alloc]initWithRootViewController:mainVC];
+    self.mainNavigationController.navigationBar.barTintColor = [UIColor colorWithRed:26.0/255.0 green:165.0/255.0 blue:235.0/255.0 alpha:1.0];
+    LeftSortsViewController * lestVC = [[LeftSortsViewController alloc]init];
+    self.LeftSlideVC = [[LeftSlideViewController alloc]initWithLeftView:lestVC andMainView:self.mainNavigationController];    
+    self.window.rootViewController = self.LeftSlideVC;
+    
     return YES;
 }
 

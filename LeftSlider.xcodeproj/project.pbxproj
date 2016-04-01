@@ -18,11 +18,15 @@
 		38A8100C1CAE571000061271 /* LeftSliderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8100B1CAE571000061271 /* LeftSliderUITests.m */; };
 		38A8101A1CAE581200061271 /* FirstPage in Resources */ = {isa = PBXBuildFile; fileRef = 38A810191CAE581200061271 /* FirstPage */; };
 		38A810221CAE587700061271 /* Common in Resources */ = {isa = PBXBuildFile; fileRef = 38A8101D1CAE587700061271 /* Common */; };
-		38A810231CAE587700061271 /* OtherPage in Resources */ = {isa = PBXBuildFile; fileRef = 38A8101E1CAE587700061271 /* OtherPage */; };
 		38A810241CAE587700061271 /* SecondPage in Resources */ = {isa = PBXBuildFile; fileRef = 38A8101F1CAE587700061271 /* SecondPage */; };
 		38A810251CAE587700061271 /* ThirdPage in Resources */ = {isa = PBXBuildFile; fileRef = 38A810201CAE587700061271 /* ThirdPage */; };
-		38A810261CAE587700061271 /* ThirdPart in Resources */ = {isa = PBXBuildFile; fileRef = 38A810211CAE587700061271 /* ThirdPart */; };
 		38A8102A1CAE598400061271 /* CoreData in Resources */ = {isa = PBXBuildFile; fileRef = 38A810281CAE598400061271 /* CoreData */; };
+		38A810351CAE68C700061271 /* LeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A810341CAE68C700061271 /* LeftSortsViewController.m */; };
+		38A810381CAE68D600061271 /* SkipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A810371CAE68D600061271 /* SkipViewController.m */; };
+		38A8103D1CAE68E100061271 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8103A1CAE68E100061271 /* LeftSlideViewController.m */; };
+		38A8103E1CAE68E100061271 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8103C1CAE68E100061271 /* UIView_extra.m */; };
+		38A810421CAE695200061271 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A810411CAE695200061271 /* OtherViewController.m */; };
+		FFAEBB458CDA6A9C4E95267D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A7D8466DDD42F2E84BE165 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1160FC9EF9FA1A0084C6E260 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		38A80FE01CAE571000061271 /* LeftSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A80FE41CAE571000061271 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38A80FE61CAE571000061271 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,11 +67,21 @@
 		38A8100D1CAE571000061271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38A810191CAE581200061271 /* FirstPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirstPage; sourceTree = "<group>"; };
 		38A8101D1CAE587700061271 /* Common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Common; sourceTree = "<group>"; };
-		38A8101E1CAE587700061271 /* OtherPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OtherPage; sourceTree = "<group>"; };
 		38A8101F1CAE587700061271 /* SecondPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SecondPage; sourceTree = "<group>"; };
 		38A810201CAE587700061271 /* ThirdPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ThirdPage; sourceTree = "<group>"; };
-		38A810211CAE587700061271 /* ThirdPart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ThirdPart; sourceTree = "<group>"; };
 		38A810281CAE598400061271 /* CoreData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreData; sourceTree = "<group>"; };
+		38A810331CAE68C700061271 /* LeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftSortsViewController.h; path = ThirdPart/LeftSide/LeftSortsViewController.h; sourceTree = "<group>"; };
+		38A810341CAE68C700061271 /* LeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftSortsViewController.m; path = ThirdPart/LeftSide/LeftSortsViewController.m; sourceTree = "<group>"; };
+		38A810361CAE68D600061271 /* SkipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkipViewController.h; path = ThirdPart/LeftSide/SideBackViewController/SkipViewController.h; sourceTree = "<group>"; };
+		38A810371CAE68D600061271 /* SkipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkipViewController.m; path = ThirdPart/LeftSide/SideBackViewController/SkipViewController.m; sourceTree = "<group>"; };
+		38A810391CAE68E100061271 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftSlideViewController.h; path = ThirdPart/LeftSide/LeftSlideViewController/LeftSlideViewController.h; sourceTree = "<group>"; };
+		38A8103A1CAE68E100061271 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftSlideViewController.m; path = ThirdPart/LeftSide/LeftSlideViewController/LeftSlideViewController.m; sourceTree = "<group>"; };
+		38A8103B1CAE68E100061271 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIView_extra.h; path = ThirdPart/LeftSide/LeftSlideViewController/UIView_extra.h; sourceTree = "<group>"; };
+		38A8103C1CAE68E100061271 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIView_extra.m; path = ThirdPart/LeftSide/LeftSlideViewController/UIView_extra.m; sourceTree = "<group>"; };
+		38A810401CAE695200061271 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherViewController.h; path = OtherPage/OtherViewController.h; sourceTree = "<group>"; };
+		38A810411CAE695200061271 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherViewController.m; path = OtherPage/OtherViewController.m; sourceTree = "<group>"; };
+		A9A7D8466DDD42F2E84BE165 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F2F0E369FD634FC11D84EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAEBB458CDA6A9C4E95267D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		211408DD6FCD63B80A70DA14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4F2F0E369FD634FC11D84EE /* Pods.debug.xcconfig */,
+				1160FC9EF9FA1A0084C6E260 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		38A80FD71CAE571000061271 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +126,8 @@
 				38A80FFF1CAE571000061271 /* LeftSliderTests */,
 				38A8100A1CAE571000061271 /* LeftSliderUITests */,
 				38A80FE11CAE571000061271 /* Products */,
+				211408DD6FCD63B80A70DA14 /* Pods */,
+				933DED81A3472146ADD9CD53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,13 +144,13 @@
 		38A80FE21CAE571000061271 /* LeftSlider */ = {
 			isa = PBXGroup;
 			children = (
+				38A8103F1CAE691B00061271 /* OtherPage */,
+				38A8102F1CAE688E00061271 /* ThirdPart */,
 				38A810281CAE598400061271 /* CoreData */,
 				38A810191CAE581200061271 /* FirstPage */,
 				38A8101F1CAE587700061271 /* SecondPage */,
 				38A810201CAE587700061271 /* ThirdPage */,
-				38A810211CAE587700061271 /* ThirdPart */,
 				38A8101D1CAE587700061271 /* Common */,
-				38A8101E1CAE587700061271 /* OtherPage */,
 				38A80FE61CAE571000061271 /* AppDelegate.h */,
 				38A80FE71CAE571000061271 /* AppDelegate.m */,
 				38A80FE91CAE571000061271 /* ViewController.h */,
@@ -172,6 +199,62 @@
 			name = StroyBoard;
 			sourceTree = "<group>";
 		};
+		38A8102F1CAE688E00061271 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				38A810301CAE689D00061271 /* LeftSider */,
+			);
+			name = ThirdPart;
+			sourceTree = "<group>";
+		};
+		38A810301CAE689D00061271 /* LeftSider */ = {
+			isa = PBXGroup;
+			children = (
+				38A810331CAE68C700061271 /* LeftSortsViewController.h */,
+				38A810341CAE68C700061271 /* LeftSortsViewController.m */,
+				38A810321CAE68AF00061271 /* SideBackViewController */,
+				38A810311CAE68A700061271 /* LeftSlideViewController */,
+			);
+			name = LeftSider;
+			sourceTree = "<group>";
+		};
+		38A810311CAE68A700061271 /* LeftSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38A810391CAE68E100061271 /* LeftSlideViewController.h */,
+				38A8103A1CAE68E100061271 /* LeftSlideViewController.m */,
+				38A8103B1CAE68E100061271 /* UIView_extra.h */,
+				38A8103C1CAE68E100061271 /* UIView_extra.m */,
+			);
+			name = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		38A810321CAE68AF00061271 /* SideBackViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38A810361CAE68D600061271 /* SkipViewController.h */,
+				38A810371CAE68D600061271 /* SkipViewController.m */,
+			);
+			name = SideBackViewController;
+			sourceTree = "<group>";
+		};
+		38A8103F1CAE691B00061271 /* OtherPage */ = {
+			isa = PBXGroup;
+			children = (
+				38A810401CAE695200061271 /* OtherViewController.h */,
+				38A810411CAE695200061271 /* OtherViewController.m */,
+			);
+			name = OtherPage;
+			sourceTree = "<group>";
+		};
+		933DED81A3472146ADD9CD53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9A7D8466DDD42F2E84BE165 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38A810101CAE571000061271 /* Build configuration list for PBXNativeTarget "LeftSlider" */;
 			buildPhases = (
+				8F835A78768D3A84C72DDF0D /* Check Pods Manifest.lock */,
 				38A80FDC1CAE571000061271 /* Sources */,
 				38A80FDD1CAE571000061271 /* Frameworks */,
 				38A80FDE1CAE571000061271 /* Resources */,
+				19BA6989B26C826D089E7EE0 /* Embed Pods Frameworks */,
+				5EE8D4E9062E0311B7873F9F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,9 +366,7 @@
 				38A810251CAE587700061271 /* ThirdPage in Resources */,
 				38A80FF61CAE571000061271 /* LaunchScreen.storyboard in Resources */,
 				38A810241CAE587700061271 /* SecondPage in Resources */,
-				38A810231CAE587700061271 /* OtherPage in Resources */,
 				38A80FF31CAE571000061271 /* Assets.xcassets in Resources */,
-				38A810261CAE587700061271 /* ThirdPart in Resources */,
 				38A8101A1CAE581200061271 /* FirstPage in Resources */,
 				38A80FEE1CAE571000061271 /* Main.storyboard in Resources */,
 			);
@@ -304,13 +388,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19BA6989B26C826D089E7EE0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE8D4E9062E0311B7873F9F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F835A78768D3A84C72DDF0D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38A80FDC1CAE571000061271 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A810351CAE68C700061271 /* LeftSortsViewController.m in Sources */,
+				38A8103D1CAE68E100061271 /* LeftSlideViewController.m in Sources */,
+				38A810381CAE68D600061271 /* SkipViewController.m in Sources */,
+				38A810421CAE695200061271 /* OtherViewController.m in Sources */,
 				38A80FEB1CAE571000061271 /* ViewController.m in Sources */,
 				38A80FF11CAE571000061271 /* LeftSlider.xcdatamodeld in Sources */,
+				38A8103E1CAE68E100061271 /* UIView_extra.m in Sources */,
 				38A80FE81CAE571000061271 /* AppDelegate.m in Sources */,
 				38A80FE51CAE571000061271 /* main.m in Sources */,
 			);
@@ -451,6 +588,7 @@
 		};
 		38A810111CAE571000061271 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F2F0E369FD634FC11D84EE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LeftSlider/Info.plist;
@@ -462,6 +600,7 @@
 		};
 		38A810121CAE571000061271 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1160FC9EF9FA1A0084C6E260 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LeftSlider/Info.plist;

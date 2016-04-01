@@ -16,6 +16,13 @@
 		38A80FF61CAE571000061271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A80FF41CAE571000061271 /* LaunchScreen.storyboard */; };
 		38A810011CAE571000061271 /* LeftSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A810001CAE571000061271 /* LeftSliderTests.m */; };
 		38A8100C1CAE571000061271 /* LeftSliderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8100B1CAE571000061271 /* LeftSliderUITests.m */; };
+		38A8101A1CAE581200061271 /* FirstPage in Resources */ = {isa = PBXBuildFile; fileRef = 38A810191CAE581200061271 /* FirstPage */; };
+		38A810221CAE587700061271 /* Common in Resources */ = {isa = PBXBuildFile; fileRef = 38A8101D1CAE587700061271 /* Common */; };
+		38A810231CAE587700061271 /* OtherPage in Resources */ = {isa = PBXBuildFile; fileRef = 38A8101E1CAE587700061271 /* OtherPage */; };
+		38A810241CAE587700061271 /* SecondPage in Resources */ = {isa = PBXBuildFile; fileRef = 38A8101F1CAE587700061271 /* SecondPage */; };
+		38A810251CAE587700061271 /* ThirdPage in Resources */ = {isa = PBXBuildFile; fileRef = 38A810201CAE587700061271 /* ThirdPage */; };
+		38A810261CAE587700061271 /* ThirdPart in Resources */ = {isa = PBXBuildFile; fileRef = 38A810211CAE587700061271 /* ThirdPart */; };
+		38A8102A1CAE598400061271 /* CoreData in Resources */ = {isa = PBXBuildFile; fileRef = 38A810281CAE598400061271 /* CoreData */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		38A810071CAE571000061271 /* LeftSliderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeftSliderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A8100B1CAE571000061271 /* LeftSliderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSliderUITests.m; sourceTree = "<group>"; };
 		38A8100D1CAE571000061271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38A810191CAE581200061271 /* FirstPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FirstPage; sourceTree = "<group>"; };
+		38A8101D1CAE587700061271 /* Common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Common; sourceTree = "<group>"; };
+		38A8101E1CAE587700061271 /* OtherPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OtherPage; sourceTree = "<group>"; };
+		38A8101F1CAE587700061271 /* SecondPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SecondPage; sourceTree = "<group>"; };
+		38A810201CAE587700061271 /* ThirdPage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ThirdPage; sourceTree = "<group>"; };
+		38A810211CAE587700061271 /* ThirdPart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ThirdPart; sourceTree = "<group>"; };
+		38A810281CAE598400061271 /* CoreData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreData; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +117,18 @@
 		38A80FE21CAE571000061271 /* LeftSlider */ = {
 			isa = PBXGroup;
 			children = (
+				38A810281CAE598400061271 /* CoreData */,
+				38A810191CAE581200061271 /* FirstPage */,
+				38A8101F1CAE587700061271 /* SecondPage */,
+				38A810201CAE587700061271 /* ThirdPage */,
+				38A810211CAE587700061271 /* ThirdPart */,
+				38A8101D1CAE587700061271 /* Common */,
+				38A8101E1CAE587700061271 /* OtherPage */,
 				38A80FE61CAE571000061271 /* AppDelegate.h */,
 				38A80FE71CAE571000061271 /* AppDelegate.m */,
 				38A80FE91CAE571000061271 /* ViewController.h */,
 				38A80FEA1CAE571000061271 /* ViewController.m */,
-				38A80FEC1CAE571000061271 /* Main.storyboard */,
-				38A80FF21CAE571000061271 /* Assets.xcassets */,
-				38A80FF41CAE571000061271 /* LaunchScreen.storyboard */,
-				38A80FF71CAE571000061271 /* Info.plist */,
-				38A80FEF1CAE571000061271 /* LeftSlider.xcdatamodeld */,
+				38A8102C1CAE59B800061271 /* StroyBoard */,
 				38A80FE31CAE571000061271 /* Supporting Files */,
 			);
 			path = LeftSlider;
@@ -120,6 +137,9 @@
 		38A80FE31CAE571000061271 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				38A80FEF1CAE571000061271 /* LeftSlider.xcdatamodeld */,
+				38A80FF21CAE571000061271 /* Assets.xcassets */,
+				38A80FF71CAE571000061271 /* Info.plist */,
 				38A80FE41CAE571000061271 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -141,6 +161,15 @@
 				38A8100D1CAE571000061271 /* Info.plist */,
 			);
 			path = LeftSliderUITests;
+			sourceTree = "<group>";
+		};
+		38A8102C1CAE59B800061271 /* StroyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				38A80FEC1CAE571000061271 /* Main.storyboard */,
+				38A80FF41CAE571000061271 /* LaunchScreen.storyboard */,
+			);
+			name = StroyBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +275,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A810221CAE587700061271 /* Common in Resources */,
+				38A8102A1CAE598400061271 /* CoreData in Resources */,
+				38A810251CAE587700061271 /* ThirdPage in Resources */,
 				38A80FF61CAE571000061271 /* LaunchScreen.storyboard in Resources */,
+				38A810241CAE587700061271 /* SecondPage in Resources */,
+				38A810231CAE587700061271 /* OtherPage in Resources */,
 				38A80FF31CAE571000061271 /* Assets.xcassets in Resources */,
+				38A810261CAE587700061271 /* ThirdPart in Resources */,
+				38A8101A1CAE581200061271 /* FirstPage in Resources */,
 				38A80FEE1CAE571000061271 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +538,7 @@
 				38A810121CAE571000061271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38A810131CAE571000061271 /* Build configuration list for PBXNativeTarget "LeftSliderTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +547,7 @@
 				38A810151CAE571000061271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38A810161CAE571000061271 /* Build configuration list for PBXNativeTarget "LeftSliderUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +556,7 @@
 				38A810181CAE571000061271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

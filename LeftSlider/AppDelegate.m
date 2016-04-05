@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LeftSortsViewController.h"
-#import "ViewController.h"
+#import "MainPageViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +23,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController * mainVC = [storyBoard instantiateViewControllerWithIdentifier:@"ViewController"];
+    MainPageViewController * mainVC = [storyBoard instantiateViewControllerWithIdentifier:@"MainPageViewController"];
     
     self.mainNavigationController = [[UINavigationController alloc]initWithRootViewController:mainVC];
     self.mainNavigationController.navigationBar.barTintColor = [UIColor colorWithRed:26.0/255.0 green:165.0/255.0 blue:235.0/255.0 alpha:1.0];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -22,5 +22,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--联系人-->
+        <scene sceneID="zOO-pv-hJa">
+            <objects>
+                <viewController id="lYY-iT-rHP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XN0-FE-Wxc"/>
+                        <viewControllerLayoutGuide type="bottom" id="lov-15-SNu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8WY-Sp-guk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="联系人" image="Second_bit" id="560-g7-ejz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jma-zH-nVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133" y="1415"/>
+        </scene>
+        <!--动态-->
+        <scene sceneID="lyO-H1-Th7">
+            <objects>
+                <viewController id="2JP-N8-Chh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TXN-Dm-XkF"/>
+                        <viewControllerLayoutGuide type="bottom" id="v3M-Bg-yoA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GpD-PJ-yp0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="动态" image="xingxing" id="rBz-oh-irF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83Z-Ml-9Oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133" y="2198"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="xSf-0C-TBg">
+            <objects>
+                <viewController id="1F7-b2-KhQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bqj-Fy-HEj"/>
+                        <viewControllerLayoutGuide type="bottom" id="HLm-nI-Uvo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CY5-Sx-zfx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="消息" image="Firsrt_bit" id="9lH-Xv-3J4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gp-Ue-Eud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133" y="628"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="oxm-fP-D4X">
+            <objects>
+                <tabBarController storyboardIdentifier="MainPageViewController" id="gdk-4l-LRT" customClass="MainPageViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bcU-UC-yqh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="0.95999999999999996" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1F7-b2-KhQ" kind="relationship" relationship="viewControllers" id="iOl-Bk-it2"/>
+                        <segue destination="lYY-iT-rHP" kind="relationship" relationship="viewControllers" id="noV-i0-Afq"/>
+                        <segue destination="2JP-N8-Chh" kind="relationship" relationship="viewControllers" id="0hD-Gw-dwl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4r4-3E-s1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="1178"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Firsrt_bit" width="24" height="24"/>
+        <image name="Second_bit" width="24" height="24"/>
+        <image name="xingxing" width="26" height="27"/>
+    </resources>
 </document>

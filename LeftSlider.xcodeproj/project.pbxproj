@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		38A80FE51CAE571000061271 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A80FE41CAE571000061271 /* main.m */; };
 		38A80FE81CAE571000061271 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A80FE71CAE571000061271 /* AppDelegate.m */; };
-		38A80FEB1CAE571000061271 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A80FEA1CAE571000061271 /* ViewController.m */; };
+		38A80FEB1CAE571000061271 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A80FEA1CAE571000061271 /* MainPageViewController.m */; };
 		38A80FEE1CAE571000061271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A80FEC1CAE571000061271 /* Main.storyboard */; };
 		38A80FF11CAE571000061271 /* LeftSlider.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A80FEF1CAE571000061271 /* LeftSlider.xcdatamodeld */; };
 		38A80FF31CAE571000061271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A80FF21CAE571000061271 /* Assets.xcassets */; };
@@ -26,6 +26,12 @@
 		38A8103D1CAE68E100061271 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8103A1CAE68E100061271 /* LeftSlideViewController.m */; };
 		38A8103E1CAE68E100061271 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8103C1CAE68E100061271 /* UIView_extra.m */; };
 		38A810421CAE695200061271 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A810411CAE695200061271 /* OtherViewController.m */; };
+		38A810661CAE7EFF00061271 /* WBPopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8105B1CAE7EFF00061271 /* WBPopMenuModel.m */; };
+		38A810671CAE7EFF00061271 /* WBPopMenuSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8105D1CAE7EFF00061271 /* WBPopMenuSingleton.m */; };
+		38A810681CAE7EFF00061271 /* WBPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8105F1CAE7EFF00061271 /* WBPopMenuView.m */; };
+		38A810691CAE7EFF00061271 /* WBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A810611CAE7EFF00061271 /* WBTableViewCell.m */; };
+		38A8106A1CAE7EFF00061271 /* WBTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A810631CAE7EFF00061271 /* WBTableViewDataSource.m */; };
+		38A8106B1CAE7EFF00061271 /* WBTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A810651CAE7EFF00061271 /* WBTableViewDelegate.m */; };
 		FFAEBB458CDA6A9C4E95267D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A7D8466DDD42F2E84BE165 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +58,8 @@
 		38A80FE41CAE571000061271 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38A80FE61CAE571000061271 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38A80FE71CAE571000061271 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		38A80FE91CAE571000061271 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		38A80FEA1CAE571000061271 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		38A80FE91CAE571000061271 /* MainPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
+		38A80FEA1CAE571000061271 /* MainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
 		38A80FED1CAE571000061271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38A80FF01CAE571000061271 /* LeftSlider.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeftSlider.xcdatamodel; sourceTree = "<group>"; };
 		38A80FF21CAE571000061271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +86,18 @@
 		38A8103C1CAE68E100061271 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIView_extra.m; path = ThirdPart/LeftSide/LeftSlideViewController/UIView_extra.m; sourceTree = "<group>"; };
 		38A810401CAE695200061271 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherViewController.h; path = OtherPage/OtherViewController.h; sourceTree = "<group>"; };
 		38A810411CAE695200061271 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherViewController.m; path = OtherPage/OtherViewController.m; sourceTree = "<group>"; };
+		38A8105A1CAE7EFF00061271 /* WBPopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBPopMenuModel.h; path = ThirdPart/PopMenuView/WBPopMenuModel.h; sourceTree = "<group>"; };
+		38A8105B1CAE7EFF00061271 /* WBPopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBPopMenuModel.m; path = ThirdPart/PopMenuView/WBPopMenuModel.m; sourceTree = "<group>"; };
+		38A8105C1CAE7EFF00061271 /* WBPopMenuSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBPopMenuSingleton.h; path = ThirdPart/PopMenuView/WBPopMenuSingleton.h; sourceTree = "<group>"; };
+		38A8105D1CAE7EFF00061271 /* WBPopMenuSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBPopMenuSingleton.m; path = ThirdPart/PopMenuView/WBPopMenuSingleton.m; sourceTree = "<group>"; };
+		38A8105E1CAE7EFF00061271 /* WBPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBPopMenuView.h; path = ThirdPart/PopMenuView/WBPopMenuView.h; sourceTree = "<group>"; };
+		38A8105F1CAE7EFF00061271 /* WBPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBPopMenuView.m; path = ThirdPart/PopMenuView/WBPopMenuView.m; sourceTree = "<group>"; };
+		38A810601CAE7EFF00061271 /* WBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTableViewCell.h; path = ThirdPart/PopMenuView/WBTableViewCell.h; sourceTree = "<group>"; };
+		38A810611CAE7EFF00061271 /* WBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBTableViewCell.m; path = ThirdPart/PopMenuView/WBTableViewCell.m; sourceTree = "<group>"; };
+		38A810621CAE7EFF00061271 /* WBTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTableViewDataSource.h; path = ThirdPart/PopMenuView/WBTableViewDataSource.h; sourceTree = "<group>"; };
+		38A810631CAE7EFF00061271 /* WBTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBTableViewDataSource.m; path = ThirdPart/PopMenuView/WBTableViewDataSource.m; sourceTree = "<group>"; };
+		38A810641CAE7EFF00061271 /* WBTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTableViewDelegate.h; path = ThirdPart/PopMenuView/WBTableViewDelegate.h; sourceTree = "<group>"; };
+		38A810651CAE7EFF00061271 /* WBTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBTableViewDelegate.m; path = ThirdPart/PopMenuView/WBTableViewDelegate.m; sourceTree = "<group>"; };
 		A9A7D8466DDD42F2E84BE165 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F2F0E369FD634FC11D84EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +162,7 @@
 		38A80FE21CAE571000061271 /* LeftSlider */ = {
 			isa = PBXGroup;
 			children = (
+				38A810431CAE7A9C00061271 /* FirstPage */,
 				38A8103F1CAE691B00061271 /* OtherPage */,
 				38A8102F1CAE688E00061271 /* ThirdPart */,
 				38A810281CAE598400061271 /* CoreData */,
@@ -153,8 +172,6 @@
 				38A8101D1CAE587700061271 /* Common */,
 				38A80FE61CAE571000061271 /* AppDelegate.h */,
 				38A80FE71CAE571000061271 /* AppDelegate.m */,
-				38A80FE91CAE571000061271 /* ViewController.h */,
-				38A80FEA1CAE571000061271 /* ViewController.m */,
 				38A8102C1CAE59B800061271 /* StroyBoard */,
 				38A80FE31CAE571000061271 /* Supporting Files */,
 			);
@@ -202,6 +219,7 @@
 		38A8102F1CAE688E00061271 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				38A810471CAE7EBB00061271 /* PopMenuView */,
 				38A810301CAE689D00061271 /* LeftSider */,
 			);
 			name = ThirdPart;
@@ -245,6 +263,58 @@
 				38A810411CAE695200061271 /* OtherViewController.m */,
 			);
 			name = OtherPage;
+			sourceTree = "<group>";
+		};
+		38A810431CAE7A9C00061271 /* FirstPage */ = {
+			isa = PBXGroup;
+			children = (
+				38A810461CAE7AD100061271 /* model */,
+				38A810451CAE7ACC00061271 /* view */,
+				38A810441CAE7AC400061271 /* controller */,
+			);
+			name = FirstPage;
+			sourceTree = "<group>";
+		};
+		38A810441CAE7AC400061271 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				38A80FE91CAE571000061271 /* MainPageViewController.h */,
+				38A80FEA1CAE571000061271 /* MainPageViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		38A810451CAE7ACC00061271 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		38A810461CAE7AD100061271 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		38A810471CAE7EBB00061271 /* PopMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				38A8105A1CAE7EFF00061271 /* WBPopMenuModel.h */,
+				38A8105B1CAE7EFF00061271 /* WBPopMenuModel.m */,
+				38A8105C1CAE7EFF00061271 /* WBPopMenuSingleton.h */,
+				38A8105D1CAE7EFF00061271 /* WBPopMenuSingleton.m */,
+				38A8105E1CAE7EFF00061271 /* WBPopMenuView.h */,
+				38A8105F1CAE7EFF00061271 /* WBPopMenuView.m */,
+				38A810601CAE7EFF00061271 /* WBTableViewCell.h */,
+				38A810611CAE7EFF00061271 /* WBTableViewCell.m */,
+				38A810621CAE7EFF00061271 /* WBTableViewDataSource.h */,
+				38A810631CAE7EFF00061271 /* WBTableViewDataSource.m */,
+				38A810641CAE7EFF00061271 /* WBTableViewDelegate.h */,
+				38A810651CAE7EFF00061271 /* WBTableViewDelegate.m */,
+			);
+			name = PopMenuView;
 			sourceTree = "<group>";
 		};
 		933DED81A3472146ADD9CD53 /* Frameworks */ = {
@@ -443,11 +513,17 @@
 			files = (
 				38A810351CAE68C700061271 /* LeftSortsViewController.m in Sources */,
 				38A8103D1CAE68E100061271 /* LeftSlideViewController.m in Sources */,
+				38A810671CAE7EFF00061271 /* WBPopMenuSingleton.m in Sources */,
+				38A8106B1CAE7EFF00061271 /* WBTableViewDelegate.m in Sources */,
+				38A8106A1CAE7EFF00061271 /* WBTableViewDataSource.m in Sources */,
 				38A810381CAE68D600061271 /* SkipViewController.m in Sources */,
 				38A810421CAE695200061271 /* OtherViewController.m in Sources */,
-				38A80FEB1CAE571000061271 /* ViewController.m in Sources */,
+				38A80FEB1CAE571000061271 /* MainPageViewController.m in Sources */,
 				38A80FF11CAE571000061271 /* LeftSlider.xcdatamodeld in Sources */,
 				38A8103E1CAE68E100061271 /* UIView_extra.m in Sources */,
+				38A810661CAE7EFF00061271 /* WBPopMenuModel.m in Sources */,
+				38A810691CAE7EFF00061271 /* WBTableViewCell.m in Sources */,
+				38A810681CAE7EFF00061271 /* WBPopMenuView.m in Sources */,
 				38A80FE81CAE571000061271 /* AppDelegate.m in Sources */,
 				38A80FE51CAE571000061271 /* main.m in Sources */,
 			);

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -59,6 +60,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83Z-Ml-9Oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1133" y="2198"/>
+        </scene>
+        <!--Pop Table View Controller-->
+        <scene sceneID="QOh-wz-zTJ">
+            <objects>
+                <tableViewController storyboardIdentifier="PopTableViewController" id="Fyf-jm-fE6" customClass="PopTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kez-C9-4Bp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tUT-PD-2zK">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tUT-PD-2zK" id="dym-e4-iV5">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7tQ-AF-lVh">
+                                            <rect key="frame" x="18" y="13" width="33" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="33" id="phu-Gx-0h3"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7tQ-AF-lVh" firstAttribute="leading" secondItem="dym-e4-iV5" secondAttribute="leadingMargin" constant="10" id="B5d-Ra-0Vg"/>
+                                        <constraint firstItem="7tQ-AF-lVh" firstAttribute="top" secondItem="dym-e4-iV5" secondAttribute="topMargin" constant="5" id="Slz-uk-RfE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7tQ-AF-lVh" secondAttribute="bottom" constant="5" id="f9K-tW-AlH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fyf-jm-fE6" id="fFO-49-DiV"/>
+                            <outlet property="delegate" destination="Fyf-jm-fE6" id="Lts-Ox-1ax"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="owA-4m-ChC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133" y="-97"/>
         </scene>
         <!--消息-->
         <scene sceneID="xSf-0C-TBg">

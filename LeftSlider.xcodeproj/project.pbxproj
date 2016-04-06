@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385A90DC1CB4EF6800AFC674 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 385A90DB1CB4EF6800AFC674 /* FirstTableViewCell.m */; };
 		3883DDAD1CB397AC00D96EE6 /* ZFPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3883DDA81CB397AC00D96EE6 /* ZFPopupMenu.m */; };
 		3883DDAE1CB397AC00D96EE6 /* ZFPopupMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3883DDAA1CB397AC00D96EE6 /* ZFPopupMenuItem.m */; };
 		3883DDAF1CB397AC00D96EE6 /* ZFPopupOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3883DDAC1CB397AC00D96EE6 /* ZFPopupOverlayView.m */; };
@@ -52,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		1160FC9EF9FA1A0084C6E260 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		385A90DA1CB4EF6800AFC674 /* FirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstTableViewCell.h; path = FirstPage/view/FirstTableViewCell.h; sourceTree = "<group>"; };
+		385A90DB1CB4EF6800AFC674 /* FirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstTableViewCell.m; path = FirstPage/view/FirstTableViewCell.m; sourceTree = "<group>"; };
 		3883DDA71CB397AC00D96EE6 /* ZFPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFPopupMenu.h; path = ThirdPart/PopMenuView/ZFPopupMenu.h; sourceTree = "<group>"; };
 		3883DDA81CB397AC00D96EE6 /* ZFPopupMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZFPopupMenu.m; path = ThirdPart/PopMenuView/ZFPopupMenu.m; sourceTree = "<group>"; };
 		3883DDA91CB397AC00D96EE6 /* ZFPopupMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFPopupMenuItem.h; path = ThirdPart/PopMenuView/ZFPopupMenuItem.h; sourceTree = "<group>"; };
@@ -283,6 +286,8 @@
 		38A810451CAE7ACC00061271 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				385A90DA1CB4EF6800AFC674 /* FirstTableViewCell.h */,
+				385A90DB1CB4EF6800AFC674 /* FirstTableViewCell.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -513,6 +518,7 @@
 				3883DDAD1CB397AC00D96EE6 /* ZFPopupMenu.m in Sources */,
 				38A8103E1CAE68E100061271 /* UIView_extra.m in Sources */,
 				38A80FE81CAE571000061271 /* AppDelegate.m in Sources */,
+				385A90DC1CB4EF6800AFC674 /* FirstTableViewCell.m in Sources */,
 				38A80FE51CAE571000061271 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

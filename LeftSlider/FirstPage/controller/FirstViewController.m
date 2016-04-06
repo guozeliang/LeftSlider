@@ -23,7 +23,6 @@
 
 //    [self setAutomaticallyAdjustsScrollViewInsets:YES];
 //    [self setExtendedLayoutIncludesOpaqueBars:YES];
-    
     [self navBarInit];
     
 }
@@ -58,8 +57,10 @@
     
     NSArray *segArray = @[@"消息",@"电话"];
     UISegmentedControl *segmentControl = [[UISegmentedControl alloc]initWithItems:segArray];
-    //    segmentControl.layer.cornerRadius = 15;
-    //    segmentControl.layer.masksToBounds = YES;
+//    segmentControl.layer.cornerRadius = 15;
+//    segmentControl.layer.masksToBounds = YES;
+//    segmentControl.layer.borderColor = (__bridge CGColorRef _Nullable)([UIColor whiteColor]);
+//    segmentControl.layer.borderWidth = 5.0;
     segmentControl.selectedSegmentIndex = 0;
     segmentControl.frame = CGRectMake(0.0, 0.0, 120, 30);
     segmentControl.tintColor = [UIColor whiteColor];
@@ -100,30 +101,26 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+//    return 0;
+    return 12;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 500;
-}
 
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-//    return self.searchBar;
-//}
-
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FIRST_CELL" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"header%d",indexPath.row+1]];
     return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -195,8 +192,9 @@
     tmpFrame.origin.y += 20;
     ZFPopupMenu *popupMenu = [[ZFPopupMenu alloc] initWithItems:[self menuItems]];
     [ZFPopupMenu setSeparationLineColor:[UIColor lightGrayColor]];
-    [popupMenu showInView:self.navigationController.view fromRect:tmpFrame layoutType:Vertical];
-    [self.navigationController.view addSubview:popupMenu];
+//    [ZFPopupMenu setMenuBackgroundColorWithRed:1.0 green:1.0 blue:1.0 aphla:1];
+    [popupMenu showInView:self.tabBarController.view fromRect:tmpFrame layoutType:Vertical];
+    [self.tabBarController.view addSubview:popupMenu];
     
 }
 

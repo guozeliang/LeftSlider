@@ -21,16 +21,16 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     MainPageViewController * mainVC = [storyBoard instantiateViewControllerWithIdentifier:@"MainPageViewController"];
-    
     self.mainNavigationController = [[UINavigationController alloc]initWithRootViewController:mainVC];
     self.mainNavigationController.navigationBar.barTintColor = [UIColor colorWithRed:26.0/255.0 green:165.0/255.0 blue:235.0/255.0 alpha:1.0];
+    self.mainNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     LeftSortsViewController * lestVC = [[LeftSortsViewController alloc]init];
-    self.LeftSlideVC = [[LeftSlideViewController alloc]initWithLeftView:lestVC andMainView:self.mainNavigationController];    
+    self.LeftSlideVC = [[LeftSlideViewController alloc]initWithLeftView:lestVC andMainView:self.mainNavigationController];
     self.window.rootViewController = self.LeftSlideVC;
-    
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

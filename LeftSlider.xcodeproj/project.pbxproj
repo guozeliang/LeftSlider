@@ -10,6 +10,7 @@
 		3883DDAD1CB397AC00D96EE6 /* ZFPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3883DDA81CB397AC00D96EE6 /* ZFPopupMenu.m */; };
 		3883DDAE1CB397AC00D96EE6 /* ZFPopupMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3883DDAA1CB397AC00D96EE6 /* ZFPopupMenuItem.m */; };
 		3883DDAF1CB397AC00D96EE6 /* ZFPopupOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3883DDAC1CB397AC00D96EE6 /* ZFPopupOverlayView.m */; };
+		3883DDB51CB3B95E00D96EE6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3883DDB41CB3B95E00D96EE6 /* FirstViewController.m */; };
 		38A80FE51CAE571000061271 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A80FE41CAE571000061271 /* main.m */; };
 		38A80FE81CAE571000061271 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A80FE71CAE571000061271 /* AppDelegate.m */; };
 		38A80FEB1CAE571000061271 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A80FEA1CAE571000061271 /* MainPageViewController.m */; };
@@ -57,6 +58,8 @@
 		3883DDAA1CB397AC00D96EE6 /* ZFPopupMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZFPopupMenuItem.m; path = ThirdPart/PopMenuView/ZFPopupMenuItem.m; sourceTree = "<group>"; };
 		3883DDAB1CB397AC00D96EE6 /* ZFPopupOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFPopupOverlayView.h; path = ThirdPart/PopMenuView/ZFPopupOverlayView.h; sourceTree = "<group>"; };
 		3883DDAC1CB397AC00D96EE6 /* ZFPopupOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZFPopupOverlayView.m; path = ThirdPart/PopMenuView/ZFPopupOverlayView.m; sourceTree = "<group>"; };
+		3883DDB31CB3B95E00D96EE6 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = FirstPage/controller/FirstViewController.h; sourceTree = "<group>"; };
+		3883DDB41CB3B95E00D96EE6 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = FirstPage/controller/FirstViewController.m; sourceTree = "<group>"; };
 		38A80FE01CAE571000061271 /* LeftSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A80FE41CAE571000061271 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38A80FE61CAE571000061271 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 			children = (
 				38A80FE91CAE571000061271 /* MainPageViewController.h */,
 				38A80FEA1CAE571000061271 /* MainPageViewController.m */,
+				3883DDB31CB3B95E00D96EE6 /* FirstViewController.h */,
+				3883DDB41CB3B95E00D96EE6 /* FirstViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 				38A810381CAE68D600061271 /* SkipViewController.m in Sources */,
 				38A810421CAE695200061271 /* OtherViewController.m in Sources */,
 				38A80FEB1CAE571000061271 /* MainPageViewController.m in Sources */,
+				3883DDB51CB3B95E00D96EE6 /* FirstViewController.m in Sources */,
 				38A80FF11CAE571000061271 /* LeftSlider.xcdatamodeld in Sources */,
 				3883DDAD1CB397AC00D96EE6 /* ZFPopupMenu.m in Sources */,
 				38A8103E1CAE68E100061271 /* UIView_extra.m in Sources */,

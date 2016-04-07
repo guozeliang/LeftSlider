@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "ZFPopupMenu.h"
 #import "ZFPopupMenuItem.h"
+#import "FirstTableViewCell.h"
 
 @interface FirstViewController ()
 
@@ -17,13 +18,18 @@
 
 @implementation FirstViewController
 
+@synthesize sourceArray;
+@synthesize resultArray;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-
-//    [self setAutomaticallyAdjustsScrollViewInsets:YES];
-//    [self setExtendedLayoutIncludesOpaqueBars:YES];
+    
     [self navBarInit];
+    
+    if (sourceArray == nil) {
+        sourceArray = [NSMutableArray arrayWithObjects:@"刘省伟",@"王伯虎",@"明天",@"史九元",@"赵东林",@"启明星",@"鹏程",@"黄双",@"黄文",@"王转",@"刘建飞",@"刘晓康", nil];
+    }
     
 }
 
@@ -35,12 +41,12 @@
 
 - (void)navBarInit{
     
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [button setBackgroundImage:[UIImage imageNamed:@"header.png"]
-//                      forState:UIControlStateNormal];
-//    [button addTarget:self action:@selector(openLeftVCAction) forControlEvents:UIControlEventTouchUpInside];
-//    button.frame = CGRectMake(0.0, 0.0, 40, 40);
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundImage:[UIImage imageNamed:@"header.png"]
+                      forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(openLeftVCAction) forControlEvents:UIControlEventTouchUpInside];
+    button.frame = CGRectMake(0.0, 0.0, 40, 40);
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     
     //    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"header.png"] style:UIBarButtonItemStylePlain target:self action:@selector(openLeftVCAction)];
     //    self.navigationItem.leftBarButtonItem = leftItem;
@@ -69,17 +75,17 @@
     
 }
 
-//- (void)openLeftVCAction
-//{
-//    AppDelegate * tempAppDelegate = [[UIApplication sharedApplication]delegate];
-//    if (tempAppDelegate.LeftSlideVC.closed) {
-//        [tempAppDelegate.LeftSlideVC openLeftView];
-//    }
-//    else
-//    {
-//        [tempAppDelegate.LeftSlideVC closeLeftView];
-//    }
-//}
+- (void)openLeftVCAction
+{
+    AppDelegate * tempAppDelegate = [[UIApplication sharedApplication]delegate];
+    if (tempAppDelegate.LeftSlideVC.closed) {
+        [tempAppDelegate.LeftSlideVC openLeftView];
+    }
+    else
+    {
+        [tempAppDelegate.LeftSlideVC closeLeftView];
+    }
+}
 
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -106,7 +112,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //    return 0;
-    return 12;
+    return sourceArray.count;
 }
 
 
@@ -125,10 +131,10 @@
 //        cell.textLabel.text = [NSString stringWithFormat:@"%d",indexPath.row];//[search objectAtIndex:indexPath.row];
 //        return cell;
 //    }else{
-        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"FIRST_CELL" forIndexPath:indexPath];
+        FirstTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"FIRST_CELL" forIndexPath:indexPath];
         // Configure the cell...
         cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"header%d",indexPath.row+1]];
-        
+        cell.name.text = sourceArray[indexPath.row];
         return cell;
 //    }
     

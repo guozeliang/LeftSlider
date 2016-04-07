@@ -11,5 +11,7 @@
 @interface FirstViewController : UITableViewController<UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UISearchBar *mySearchBar;
+@property (nonatomic,strong) NSMutableArray *sourceArray;
+@property (nonatomic,strong) NSMutableArray *resultArray;
 
 @end

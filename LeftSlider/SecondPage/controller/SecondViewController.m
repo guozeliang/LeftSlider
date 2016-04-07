@@ -29,7 +29,10 @@
         self.sourceArray = [NSMutableArray arrayWithObjects:@"1",@"2",@"3", nil];
     }
 //    [self configureHeaderAndFooter];
-    
+    [self navBarInit];
+}
+
+- (void)navBarInit{
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,7 +52,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SECOND_CELL" forIndexPath:indexPath];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"SECOND_CELL" forIndexPath:indexPath];
     
     // Configure the cell...
     cell.textLabel.text = self.sourceArray[indexPath.row];
@@ -96,7 +99,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self.navigationController setProgress:<#(float)#>];
+//    [self.navigationController setProgress:(float)];
 }
 
 /*

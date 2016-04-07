@@ -90,6 +90,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.14117647059999999" green="0.64705882349999999" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="DKq-ME-Gme" kind="relationship" relationship="rootViewController" id="cHF-Xq-2Ol"/>
@@ -190,10 +193,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="91"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="明天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5T-WC-HWJ" userLabel="title">
-                                            <rect key="frame" x="128" y="16" width="40" height="27"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5T-WC-HWJ" userLabel="name">
+                                            <rect key="frame" x="128" y="16" width="60" height="27"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="27" id="Tzg-Wa-3Dv"/>
+                                                <constraint firstAttribute="width" constant="60" id="siE-Yl-rlB"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -205,7 +209,7 @@
                                             <color key="textColor" red="0.51784205436706543" green="0.58159953355789185" blue="0.58617168664932251" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上午10:18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rH-vd-onn">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上午10:18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rH-vd-onn" userLabel="time">
                                             <rect key="frame" x="527" y="22" width="55" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="55" id="fQg-n4-TbD"/>
@@ -225,6 +229,11 @@
                                         <constraint firstItem="pSI-v9-iY5" firstAttribute="leading" secondItem="B5T-WC-HWJ" secondAttribute="leading" id="rka-r8-HN3"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="content" destination="pSI-v9-iY5" id="1KY-Us-MPh"/>
+                                    <outlet property="name" destination="B5T-WC-HWJ" id="otM-Zc-uqv"/>
+                                    <outlet property="time" destination="2rH-vd-onn" id="9rQ-Ib-HU7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -7,7 +7,6 @@
 //
 
 #import "OtherViewController.h"
-
 @interface OtherViewController ()
 
 @end
@@ -22,6 +21,8 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
+//    self.fd_prefersNavigationBarHidden = NO;
+//    self.fd_interactivePopMaxAllowedInitialDistanceToLeftEdge = 200;
 }
 
 - (void)didReceiveMemoryWarning {

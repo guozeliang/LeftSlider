@@ -10,4 +10,8 @@
 
 @interface SecondViewController : UITableViewController
 
+@property (nonatomic,strong) NSMutableArray *sourceArray;
+
+@property (weak, nonatomic) IBOutlet UISearchBar *mySearchBar;
+
 @end

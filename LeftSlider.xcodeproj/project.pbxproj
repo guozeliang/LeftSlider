@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3806E45F1CB633E300C0AEFC /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806E45E1CB633E300C0AEFC /* UINavigationController+FDFullscreenPopGesture.m */; };
+		3806E4651CB647EA00C0AEFC /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806E4641CB647EA00C0AEFC /* BaseNavController.m */; };
+		3806E46D1CB65BB800C0AEFC /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806E46B1CB65BB800C0AEFC /* ProgressView.swift */; };
+		3806E46E1CB65BB800C0AEFC /* UINavigationController+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806E46C1CB65BB800C0AEFC /* UINavigationController+Progress.swift */; };
 		385A90DC1CB4EF6800AFC674 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 385A90DB1CB4EF6800AFC674 /* FirstTableViewCell.m */; };
 		385A90E31CB5083000AFC674 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385A90E21CB5083000AFC674 /* SecondViewController.m */; };
 		3883DDAD1CB397AC00D96EE6 /* ZFPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3883DDA81CB397AC00D96EE6 /* ZFPopupMenu.m */; };
@@ -53,6 +57,14 @@
 
 /* Begin PBXFileReference section */
 		1160FC9EF9FA1A0084C6E260 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3806E45D1CB633E300C0AEFC /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "ThirdPart/FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		3806E45E1CB633E300C0AEFC /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FDFullscreenPopGesture.m"; path = "ThirdPart/FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		3806E4611CB63C3000C0AEFC /* LeftSider.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSider.pch; sourceTree = "<group>"; };
+		3806E4631CB647EA00C0AEFC /* BaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNavController.h; path = Base/BaseNavController.h; sourceTree = "<group>"; };
+		3806E4641CB647EA00C0AEFC /* BaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNavController.m; path = Base/BaseNavController.m; sourceTree = "<group>"; };
+		3806E46A1CB65BB700C0AEFC /* LeftSlider-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeftSlider-Bridging-Header.h"; sourceTree = "<group>"; };
+		3806E46B1CB65BB800C0AEFC /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = ThirdPart/KYNavigationProgress/ProgressView.swift; sourceTree = "<group>"; };
+		3806E46C1CB65BB800C0AEFC /* UINavigationController+Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Progress.swift"; path = "ThirdPart/KYNavigationProgress/UINavigationController+Progress.swift"; sourceTree = "<group>"; };
 		385A90DA1CB4EF6800AFC674 /* FirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstTableViewCell.h; path = FirstPage/view/FirstTableViewCell.h; sourceTree = "<group>"; };
 		385A90DB1CB4EF6800AFC674 /* FirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstTableViewCell.m; path = FirstPage/view/FirstTableViewCell.m; sourceTree = "<group>"; };
 		385A90E11CB5083000AFC674 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = SecondPage/controller/SecondViewController.h; sourceTree = "<group>"; };
@@ -135,6 +147,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3806E45C1CB633D100C0AEFC /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				3806E45D1CB633E300C0AEFC /* UINavigationController+FDFullscreenPopGesture.h */,
+				3806E45E1CB633E300C0AEFC /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			name = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		3806E4621CB647B100C0AEFC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3806E4631CB647EA00C0AEFC /* BaseNavController.h */,
+				3806E4641CB647EA00C0AEFC /* BaseNavController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		3806E4661CB659D000C0AEFC /* KYNavigationProgress */ = {
+			isa = PBXGroup;
+			children = (
+				3806E46B1CB65BB800C0AEFC /* ProgressView.swift */,
+				3806E46C1CB65BB800C0AEFC /* UINavigationController+Progress.swift */,
+				3806E46A1CB65BB700C0AEFC /* LeftSlider-Bridging-Header.h */,
+			);
+			name = KYNavigationProgress;
+			sourceTree = "<group>";
+		};
 		385A90DD1CB507E100AFC674 /* SecondPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +233,7 @@
 		38A80FE21CAE571000061271 /* LeftSlider */ = {
 			isa = PBXGroup;
 			children = (
+				3806E4621CB647B100C0AEFC /* Base */,
 				385A90DD1CB507E100AFC674 /* SecondPage */,
 				38A810431CAE7A9C00061271 /* FirstPage */,
 				38A8103F1CAE691B00061271 /* OtherPage */,
@@ -216,6 +257,7 @@
 				38A80FF21CAE571000061271 /* Assets.xcassets */,
 				38A80FF71CAE571000061271 /* Info.plist */,
 				38A80FE41CAE571000061271 /* main.m */,
+				3806E4611CB63C3000C0AEFC /* LeftSider.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -250,6 +292,8 @@
 		38A8102F1CAE688E00061271 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				3806E4661CB659D000C0AEFC /* KYNavigationProgress */,
+				3806E45C1CB633D100C0AEFC /* FDFullscreenPopGesture */,
 				38A810471CAE7EBB00061271 /* PopMenuView */,
 				38A810301CAE689D00061271 /* LeftSider */,
 			);
@@ -541,17 +585,21 @@
 			files = (
 				385A90E31CB5083000AFC674 /* SecondViewController.m in Sources */,
 				3883DDAF1CB397AC00D96EE6 /* ZFPopupOverlayView.m in Sources */,
+				3806E45F1CB633E300C0AEFC /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				38A810351CAE68C700061271 /* LeftSortsViewController.m in Sources */,
 				38A8103D1CAE68E100061271 /* LeftSlideViewController.m in Sources */,
 				3883DDAE1CB397AC00D96EE6 /* ZFPopupMenuItem.m in Sources */,
 				38A810381CAE68D600061271 /* SkipViewController.m in Sources */,
 				38A810421CAE695200061271 /* OtherViewController.m in Sources */,
 				38A80FEB1CAE571000061271 /* MainPageViewController.m in Sources */,
+				3806E46E1CB65BB800C0AEFC /* UINavigationController+Progress.swift in Sources */,
+				3806E4651CB647EA00C0AEFC /* BaseNavController.m in Sources */,
 				3883DDB51CB3B95E00D96EE6 /* FirstViewController.m in Sources */,
 				38A80FF11CAE571000061271 /* LeftSlider.xcdatamodeld in Sources */,
 				3883DDAD1CB397AC00D96EE6 /* ZFPopupMenu.m in Sources */,
 				38A8103E1CAE68E100061271 /* UIView_extra.m in Sources */,
 				38A80FE81CAE571000061271 /* AppDelegate.m in Sources */,
+				3806E46D1CB65BB800C0AEFC /* ProgressView.swift in Sources */,
 				385A90DC1CB4EF6800AFC674 /* FirstTableViewCell.m in Sources */,
 				38A80FE51CAE571000061271 /* main.m in Sources */,
 			);
@@ -634,6 +682,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LeftSlider/LeftSider.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -676,6 +726,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LeftSlider/LeftSider.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -695,10 +747,15 @@
 			baseConfigurationReference = B4F2F0E369FD634FC11D84EE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LeftSlider/LeftSider.pch";
 				INFOPLIST_FILE = LeftSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sxtj.LeftSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeftSlider/LeftSlider-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -707,10 +764,14 @@
 			baseConfigurationReference = 1160FC9EF9FA1A0084C6E260 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LeftSlider/LeftSider.pch";
 				INFOPLIST_FILE = LeftSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sxtj.LeftSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeftSlider/LeftSlider-Bridging-Header.h";
 			};
 			name = Release;
 		};

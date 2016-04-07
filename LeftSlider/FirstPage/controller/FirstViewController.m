@@ -35,12 +35,12 @@
 
 - (void)navBarInit{
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setBackgroundImage:[UIImage imageNamed:@"header.png"]
-                      forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(openLeftVCAction) forControlEvents:UIControlEventTouchUpInside];
-    button.frame = CGRectMake(0.0, 0.0, 40, 40);
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [button setBackgroundImage:[UIImage imageNamed:@"header.png"]
+//                      forState:UIControlStateNormal];
+//    [button addTarget:self action:@selector(openLeftVCAction) forControlEvents:UIControlEventTouchUpInside];
+//    button.frame = CGRectMake(0.0, 0.0, 40, 40);
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     
     //    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"header.png"] style:UIBarButtonItemStylePlain target:self action:@selector(openLeftVCAction)];
     //    self.navigationItem.leftBarButtonItem = leftItem;
@@ -57,10 +57,10 @@
     
     NSArray *segArray = @[@"消息",@"电话"];
     UISegmentedControl *segmentControl = [[UISegmentedControl alloc]initWithItems:segArray];
-//    segmentControl.layer.cornerRadius = 15;
-//    segmentControl.layer.masksToBounds = YES;
-//    segmentControl.layer.borderColor = (__bridge CGColorRef _Nullable)([UIColor whiteColor]);
-//    segmentControl.layer.borderWidth = 5.0;
+    segmentControl.layer.cornerRadius = 15;
+    segmentControl.layer.masksToBounds = YES;
+    segmentControl.layer.borderColor = [UIColor whiteColor].CGColor;
+    segmentControl.layer.borderWidth = 1.0;
     segmentControl.selectedSegmentIndex = 0;
     segmentControl.frame = CGRectMake(0.0, 0.0, 120, 30);
     segmentControl.tintColor = [UIColor whiteColor];
@@ -69,17 +69,17 @@
     
 }
 
-- (void)openLeftVCAction
-{
-    AppDelegate * tempAppDelegate = [[UIApplication sharedApplication]delegate];
-    if (tempAppDelegate.LeftSlideVC.closed) {
-        [tempAppDelegate.LeftSlideVC openLeftView];
-    }
-    else
-    {
-        [tempAppDelegate.LeftSlideVC closeLeftView];
-    }
-}
+//- (void)openLeftVCAction
+//{
+//    AppDelegate * tempAppDelegate = [[UIApplication sharedApplication]delegate];
+//    if (tempAppDelegate.LeftSlideVC.closed) {
+//        [tempAppDelegate.LeftSlideVC openLeftView];
+//    }
+//    else
+//    {
+//        [tempAppDelegate.LeftSlideVC closeLeftView];
+//    }
+//}
 
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -111,11 +111,27 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FIRST_CELL" forIndexPath:indexPath];
     
-    // Configure the cell...
-    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"header%d",indexPath.row+1]];
-    return cell;
+//    if(tableView == self.searchDisplayController.searchResultsTableView)
+//    {
+//        static NSString *CellIdentifier = @"cell";
+//        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//        
+//        if(cell == nil)
+//        {
+//            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+//                                          reuseIdentifier:CellIdentifier];
+//        }
+//        cell.textLabel.text = [NSString stringWithFormat:@"%d",indexPath.row];//[search objectAtIndex:indexPath.row];
+//        return cell;
+//    }else{
+        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"FIRST_CELL" forIndexPath:indexPath];
+        // Configure the cell...
+        cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"header%d",indexPath.row+1]];
+        
+        return cell;
+//    }
+    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -96,23 +96,21 @@
     _scalef = (point.x * self.speedf + _scalef);
 
     BOOL needMoveWithTap = YES;  //是否还需要跟随手指移动
-    if (((self.mainVC.view.x <= 0) && (_scalef <= 0)) || ((self.mainVC.view.x >= (kScreenWidth - kMainPageDistance )) && (_scalef >= 0)))
-    {
+//    NSLog(@"%@",NSStringFromCGRect(self.mainVC.view.frame));
+    if (((self.mainVC.view.x <= 0) && (_scalef <= 0)) || ((self.mainVC.view.x >= (kScreenWidth - kMainPageDistance )) && (_scalef >= 0))){
         //边界值管控
         _scalef = 0;
         needMoveWithTap = NO;
     }
     
     //根据视图位置判断是左滑还是右边滑动
-    if (needMoveWithTap && (rec.view.frame.origin.x >= 0) && (rec.view.frame.origin.x <= (kScreenWidth - kMainPageDistance)))
-    {
+    if (needMoveWithTap && (rec.view.frame.origin.x >= 0) && (rec.view.frame.origin.x <= (kScreenWidth - kMainPageDistance))){
         CGFloat recCenterX = rec.view.center.x + point.x * self.speedf;
         if (recCenterX < kScreenWidth * 0.5 - 2) {
             recCenterX = kScreenWidth * 0.5;
         }
         
         CGFloat recCenterY = rec.view.center.y;
-        
         rec.view.center = CGPointMake(recCenterX,recCenterY);
 
         //scale 1.0~kMainPageScale
@@ -125,7 +123,6 @@
 
         //NSLog(@"%f",leftTabCenterX);
         
-        
         //leftScale kLeftScale~1.0
         CGFloat leftScale = kLeftScale + (1 - kLeftScale) * (rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance));
         
@@ -136,17 +133,12 @@
         CGFloat tempAlpha = kLeftAlpha - kLeftAlpha * (rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance));
         self.contentView.alpha = tempAlpha;
 
-    }
-    else
-    {
-        //超出范围，
-        if (self.mainVC.view.x < 0)
-        {
+    }else{
+        //超出范围
+        if (self.mainVC.view.x < 0){
             [self closeLeftView];
             _scalef = 0;
-        }
-        else if (self.mainVC.view.x > (kScreenWidth - kMainPageDistance))
-        {
+        }else if (self.mainVC.view.x > (kScreenWidth - kMainPageDistance)){
             [self openLeftView];
             _scalef = 0;
         }
@@ -154,25 +146,16 @@
     
     //手势结束后修正位置,超过约一半时向多出的一半偏移
     if (rec.state == UIGestureRecognizerStateEnded) {
-        if (fabs(_scalef) > vCouldChangeDeckStateDistance)
-        {
-            if (self.closed)
-            {
+        if (fabs(_scalef) > vCouldChangeDeckStateDistance){
+            if (self.closed){
                 [self openLeftView];
-            }
-            else
-            {
+            }else{
                 [self closeLeftView];
             }
-        }
-        else
-        {
-            if (self.closed)
-            {
+        }else{
+            if (self.closed){
                 [self closeLeftView];
-            }
-            else
-            {
+            }else{
                 [self openLeftView];
             }
         }
@@ -261,8 +244,7 @@
 //关闭行为收敛
 - (void) removeSingleTap
 {
-    for (UIButton *tempButton in [self.mainVC.view  subviews])
-    {
+    for (UIButton *tempButton in [self.mainVC.view  subviews]){
         [tempButton setUserInteractionEnabled:YES];
     }
     [self.mainVC.view removeGestureRecognizer:self.sideslipTapGes];
@@ -280,18 +262,25 @@
     [self.pan setEnabled:enabled];
 }
 
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%s\n%@",__FUNCTION__,touches);
+}
+
 -(BOOL)gestureRecognizer:(UIGestureRecognizer*)gestureRecognizer shouldReceiveTouch:(UITouch*)touch {
     
-    if(touch.view.tag == vDeckCanNotPanViewTag)
-    {
+    NSLog(@"%@",NSStringFromCGPoint([touch locationInView:touch.view]));
+    CGPoint touchPoint = [touch locationInView:touch.view];
+    if(touch.view.tag == vDeckCanNotPanViewTag){
 //        NSLog(@"不响应侧滑");
         return NO;
-    }
-    else
-    {
+        
+    }else if ([NSStringFromClass([touch.view class]) isEqualToString:@"UITableViewCellContentView"] && !CGRectContainsPoint(CGRectMake(0.0, 0.0, 100, 100),touchPoint)){
+        return NO;
+    }else{
 //        NSLog(@"响应侧滑");
         return YES;
     }
+
 }
 
 @end

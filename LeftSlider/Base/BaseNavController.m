@@ -7,8 +7,6 @@
 //
 
 #import "BaseNavController.h"
-#import "LeftSlider-Swift.h"
-
 
 @interface BaseNavController ()
 

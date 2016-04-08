@@ -262,13 +262,8 @@
     [self.pan setEnabled:enabled];
 }
 
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@"%s\n%@",__FUNCTION__,touches);
-}
-
 -(BOOL)gestureRecognizer:(UIGestureRecognizer*)gestureRecognizer shouldReceiveTouch:(UITouch*)touch {
     
-    NSLog(@"%@",NSStringFromCGPoint([touch locationInView:touch.view]));
     CGPoint touchPoint = [touch locationInView:touch.view];
     if(touch.view.tag == vDeckCanNotPanViewTag){
 //        NSLog(@"不响应侧滑");

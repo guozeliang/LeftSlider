@@ -155,6 +155,7 @@
     _loading = loading;
     
     [self.tableView reloadEmptyDataSet];
+    [self.navigationController finishProgress];
 }
 
 

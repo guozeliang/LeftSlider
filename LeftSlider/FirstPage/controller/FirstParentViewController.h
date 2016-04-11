@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FirstViewController.h"
-#import "FirstChildController.h"
+//#import "FirstChildController.h"
 
 @interface FirstParentViewController : UIViewController
 

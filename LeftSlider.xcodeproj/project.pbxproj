@@ -35,8 +35,7 @@
 		38A8103D1CAE68E100061271 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8103A1CAE68E100061271 /* LeftSlideViewController.m */; };
 		38A8103E1CAE68E100061271 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A8103C1CAE68E100061271 /* UIView_extra.m */; };
 		38A810421CAE695200061271 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A810411CAE695200061271 /* OtherViewController.m */; };
-		38AC27711CB798AA00DC58E2 /* FirstParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC27701CB798AA00DC58E2 /* FirstParentViewController.m */; };
-		38AC27741CB799BF00DC58E2 /* FirstChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC27731CB799BF00DC58E2 /* FirstChildController.m */; };
+		38CC20EA1CBB3E5F000EC0DB /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CC20E91CBB3E5F000EC0DB /* SearchResultsTableViewController.m */; };
 		FFAEBB458CDA6A9C4E95267D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A7D8466DDD42F2E84BE165 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -110,10 +109,8 @@
 		38A8103C1CAE68E100061271 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIView_extra.m; path = ThirdPart/LeftSide/LeftSlideViewController/UIView_extra.m; sourceTree = "<group>"; };
 		38A810401CAE695200061271 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherViewController.h; path = OtherPage/OtherViewController.h; sourceTree = "<group>"; };
 		38A810411CAE695200061271 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherViewController.m; path = OtherPage/OtherViewController.m; sourceTree = "<group>"; };
-		38AC276F1CB798AA00DC58E2 /* FirstParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstParentViewController.h; path = FirstPage/controller/FirstParentViewController.h; sourceTree = "<group>"; };
-		38AC27701CB798AA00DC58E2 /* FirstParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstParentViewController.m; path = FirstPage/controller/FirstParentViewController.m; sourceTree = "<group>"; };
-		38AC27721CB799BF00DC58E2 /* FirstChildController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstChildController.h; path = FirstPage/controller/FirstChildController.h; sourceTree = "<group>"; };
-		38AC27731CB799BF00DC58E2 /* FirstChildController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstChildController.m; path = FirstPage/controller/FirstChildController.m; sourceTree = "<group>"; };
+		38CC20E81CBB3E5F000EC0DB /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultsTableViewController.h; path = FirstPage/controller/SearchResultsTableViewController.h; sourceTree = "<group>"; };
+		38CC20E91CBB3E5F000EC0DB /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultsTableViewController.m; path = FirstPage/controller/SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		A9A7D8466DDD42F2E84BE165 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F2F0E369FD634FC11D84EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -363,10 +360,8 @@
 				38A80FEA1CAE571000061271 /* MainPageViewController.m */,
 				3883DDB31CB3B95E00D96EE6 /* FirstViewController.h */,
 				3883DDB41CB3B95E00D96EE6 /* FirstViewController.m */,
-				38AC276F1CB798AA00DC58E2 /* FirstParentViewController.h */,
-				38AC27701CB798AA00DC58E2 /* FirstParentViewController.m */,
-				38AC27721CB799BF00DC58E2 /* FirstChildController.h */,
-				38AC27731CB799BF00DC58E2 /* FirstChildController.m */,
+				38CC20E81CBB3E5F000EC0DB /* SearchResultsTableViewController.h */,
+				38CC20E91CBB3E5F000EC0DB /* SearchResultsTableViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -600,7 +595,6 @@
 				38A8103D1CAE68E100061271 /* LeftSlideViewController.m in Sources */,
 				3883DDAE1CB397AC00D96EE6 /* ZFPopupMenuItem.m in Sources */,
 				38A810381CAE68D600061271 /* SkipViewController.m in Sources */,
-				38AC27711CB798AA00DC58E2 /* FirstParentViewController.m in Sources */,
 				38A810421CAE695200061271 /* OtherViewController.m in Sources */,
 				38A80FEB1CAE571000061271 /* MainPageViewController.m in Sources */,
 				3806E46E1CB65BB800C0AEFC /* UINavigationController+Progress.swift in Sources */,
@@ -610,7 +604,7 @@
 				3883DDAD1CB397AC00D96EE6 /* ZFPopupMenu.m in Sources */,
 				38A8103E1CAE68E100061271 /* UIView_extra.m in Sources */,
 				38A80FE81CAE571000061271 /* AppDelegate.m in Sources */,
-				38AC27741CB799BF00DC58E2 /* FirstChildController.m in Sources */,
+				38CC20EA1CBB3E5F000EC0DB /* SearchResultsTableViewController.m in Sources */,
 				3806E46D1CB65BB800C0AEFC /* ProgressView.swift in Sources */,
 				385A90DC1CB4EF6800AFC674 /* FirstTableViewCell.m in Sources */,
 				38A80FE51CAE571000061271 /* main.m in Sources */,

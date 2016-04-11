@@ -14,7 +14,7 @@
 @interface FirstParentViewController ()
 
 @property (nonatomic, strong) FirstViewController *messageChildVC;
-@property (nonatomic, strong) FirstChildController *tellPhoneChildVC;
+//@property (nonatomic, strong) FirstChildController *tellPhoneChildVC;
 @property (nonatomic, strong) UISegmentedControl *segControl;
 
 @end
@@ -24,9 +24,10 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     // create and add our two children view controllers from our storyboard
-    
+
     [self navBarInit];
-    [self childVCInit];
+//    [self childVCInit];
+    NSLog(@"%@",self.navigationController);
    
 }
 
@@ -41,6 +42,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [tempAppDelegate.LeftSlideVC setPanEnabled:YES];
 }
@@ -80,51 +83,51 @@
     [self.segControl addTarget:self action:@selector(segmentControlAction:) forControlEvents:UIControlEventValueChanged];
     self.navigationItem.titleView = self.segControl;
 }
-
-- (void)childVCInit{
-    self.messageChildVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstViewController"];
-    [self addChildViewController:self.messageChildVC];
-    [self didMoveToParentViewController:self.messageChildVC];
-    
-    self.tellPhoneChildVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstChildController"];
-    [self addChildViewController:self.tellPhoneChildVC];
-    [self didMoveToParentViewController:self.tellPhoneChildVC];
-    
-    // by default child1 should be visible
-    // (note that later, UIStateRestoriation might change this)
-    //
-    [self addChild:self.messageChildVC withChildToRemove:nil];
-}
-
-- (void)addChild:(UIViewController *)childToAdd withChildToRemove:(UIViewController *)childToRemove{
-    assert(childToAdd != nil);
-    
-    if (childToRemove != nil)
-    {
-        [childToRemove.view removeFromSuperview];
-    }
-    
-    // match the child size to its parent
-    CGRect frame = childToAdd.view.frame;
-    frame.size.height = CGRectGetHeight(self.view.frame);
-    frame.size.width = CGRectGetWidth(self.view.frame);
-    childToAdd.view.frame = frame;
-    
-    [self.view addSubview:childToAdd.view];
-}
+//
+//- (void)childVCInit{
+//    self.messageChildVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstViewController"];
+//    [self addChildViewController:self.messageChildVC];
+//    [self didMoveToParentViewController:self.messageChildVC];
+//    
+//    self.tellPhoneChildVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstChildController"];
+//    [self addChildViewController:self.tellPhoneChildVC];
+//    [self didMoveToParentViewController:self.tellPhoneChildVC];
+//    
+//    // by default child1 should be visible
+//    // (note that later, UIStateRestoriation might change this)
+//    //
+//    [self addChild:self.messageChildVC withChildToRemove:nil];
+//}
+//
+//- (void)addChild:(UIViewController *)childToAdd withChildToRemove:(UIViewController *)childToRemove{
+//    assert(childToAdd != nil);
+//    
+//    if (childToRemove != nil)
+//    {
+//        [childToRemove.view removeFromSuperview];
+//    }
+//    
+//    // match the child size to its parent
+//    CGRect frame = childToAdd.view.frame;
+//    frame.size.height = CGRectGetHeight(self.view.frame);
+//    frame.size.width = CGRectGetWidth(self.view.frame);
+//    childToAdd.view.frame = frame;
+//    
+//    [self.view addSubview:childToAdd.view];
+//}
 
 // user tapped on the segmented control to choose which child is to be visible
-- (void)segmentControlAction:(id)sender
-{
-    UISegmentedControl *segControl = (UISegmentedControl *)sender;
-    
-    UIViewController *childToAdd, *childToRemove;
-    
-    childToAdd = (segControl.selectedSegmentIndex == 0) ? self.messageChildVC : self.tellPhoneChildVC;
-    childToRemove = (segControl.selectedSegmentIndex == 0) ? self.tellPhoneChildVC : self.messageChildVC;
-    
-    [self addChild:childToAdd withChildToRemove:childToRemove];
-}
+//- (void)segmentControlAction:(id)sender
+//{
+//    UISegmentedControl *segControl = (UISegmentedControl *)sender;
+//    
+//    UIViewController *childToAdd, *childToRemove;
+//    
+//    childToAdd = (segControl.selectedSegmentIndex == 0) ? self.messageChildVC : self.tellPhoneChildVC;
+//    childToRemove = (segControl.selectedSegmentIndex == 0) ? self.tellPhoneChildVC : self.messageChildVC;
+//    
+//    [self addChild:childToAdd withChildToRemove:childToRemove];
+//}
 
 
 - (void)openLeftVCAction
@@ -157,36 +160,36 @@
 #pragma mark - UIStateRestoration
 
 // encodeRestorableStateWithCoder is called when the app is suspended to the background
-- (void)encodeRestorableStateWithCoder:(NSCoder *)coder
-{
-    NSLog(@"ParentViewController: encodeRestorableStateWithCoder");
-    
-    // remember our children view controllers
-    [coder encodeObject:self.messageChildVC forKey:@"messageChildVC"];
-    [coder encodeObject:self.tellPhoneChildVC forKey:@"tellPhoneChildVC"];
-    
-    
-    // remember the segmented control state
-    [coder encodeInteger:self.segControl.selectedSegmentIndex forKey:@"selectedIndex"];
-    
-    [super encodeRestorableStateWithCoder:coder];
-}
-
-// decodeRestorableStateWithCoder is called when the app is re-launched
-- (void)decodeRestorableStateWithCoder:(NSCoder *)coder
-{
-    NSLog(@"ParentViewController: decodeRestorableStateWithCoder");
-    
-    // find out which child was the current visible view controller
-    self.segControl.selectedSegmentIndex = [coder decodeIntegerForKey:@"selectedIndex"];
-    
-    // call our segmented control to set the right visible child
-    // (note that we already previously have already loaded both children view controllers in viewDidLoad)
-    //
-    [self segmentControlAction:self.segControl];
-    
-    [super decodeRestorableStateWithCoder:coder];
-}
+//- (void)encodeRestorableStateWithCoder:(NSCoder *)coder
+//{
+//    NSLog(@"ParentViewController: encodeRestorableStateWithCoder");
+//    
+//    // remember our children view controllers
+//    [coder encodeObject:self.messageChildVC forKey:@"messageChildVC"];
+//    [coder encodeObject:self.tellPhoneChildVC forKey:@"tellPhoneChildVC"];
+//    
+//    
+//    // remember the segmented control state
+//    [coder encodeInteger:self.segControl.selectedSegmentIndex forKey:@"selectedIndex"];
+//    
+//    [super encodeRestorableStateWithCoder:coder];
+//}
+//
+//// decodeRestorableStateWithCoder is called when the app is re-launched
+//- (void)decodeRestorableStateWithCoder:(NSCoder *)coder
+//{
+//    NSLog(@"ParentViewController: decodeRestorableStateWithCoder");
+//    
+//    // find out which child was the current visible view controller
+//    self.segControl.selectedSegmentIndex = [coder decodeIntegerForKey:@"selectedIndex"];
+//    
+//    // call our segmented control to set the right visible child
+//    // (note that we already previously have already loaded both children view controllers in viewDidLoad)
+//    //
+//    [self segmentControlAction:self.segControl];
+//    
+//    [super decodeRestorableStateWithCoder:coder];
+//}
 
 #pragma mark - PopMenu Founciton
 
@@ -253,7 +256,5 @@
 {
     NSLog(@"新建占位符占位符");
 }
-
-
 
 @end

@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UITableViewController<UISearchBarDelegate>
+@interface FirstViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UISearchBar *mySearchBar;
 @property (nonatomic,strong) NSMutableArray *sourceArray;
 @property (nonatomic,strong) NSMutableArray *resultArray;
 
